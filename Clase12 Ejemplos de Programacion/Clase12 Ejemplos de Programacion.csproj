@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0619C4C6-FF97-4E44-924B-D9CE1B73B5C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Clase12_Ejemplos_de_Programacion</RootNamespace>
+    <AssemblyName>Clase12 Ejemplos de Programacion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clases\Button01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\ButtonBuscar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\ButtonGrabar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\ButtonModificar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\ButtonNuevo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\ButtonNuevo2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\CargaCombo.cs" />
+    <Compile Include="clases\ComboBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\Conexion_BD.cs" />
+    <Compile Include="clases\Grid01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\LabelText01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="clases\LabelText01.designer.cs">
+      <DependentUpon>LabelText01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\LabelText02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="clases\LabelText02.designer.cs">
+      <DependentUpon>LabelText02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\lbl_titulo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\ReportViewer01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="clases\SelecCuil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="clases\SelecCuil.Designer.cs">
+      <DependentUpon>SelecCuil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\Selector01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="clases\Selector01.designer.cs">
+      <DependentUpon>Selector01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\TextBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clases\TratamientosEspeciales.cs" />
+    <Compile Include="Formularios\EstadosUsuarios\Frm_ABM_EstadosUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadosUsuarios\Frm_ABM_EstadosUsuarios.Designer.cs">
+      <DependentUpon>Frm_ABM_EstadosUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadosUsuarios\Frm_EstadosUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadosUsuarios\Frm_EstadosUsuarios.designer.cs">
+      <DependentUpon>Frm_EstadosUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadosUsuarios\Frm_EstadosUsuariosAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadosUsuarios\Frm_EstadosUsuariosAlta.Designer.cs">
+      <DependentUpon>Frm_EstadosUsuariosAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadosUsuarios\Frm_EstadosUsuariosModificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadosUsuarios\Frm_EstadosUsuariosModificacion.Designer.cs">
+      <DependentUpon>Frm_EstadosUsuariosModificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Base_Selector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Base_Selector.Designer.cs">
+      <DependentUpon>Frm_Base_Selector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Ejemplo_Progracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Ejemplo_Progracion.Designer.cs">
+      <DependentUpon>Frm_Ejemplo_Progracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_EstadosUsuariosConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_EstadosUsuariosConsulta.Designer.cs">
+      <DependentUpon>Frm_EstadosUsuariosConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Seleccionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Seleccionar.Designer.cs">
+      <DependentUpon>Frm_Seleccionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inicio\Frm_Escritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inicio\Frm_Escritorio.designer.cs">
+      <DependentUpon>Frm_Escritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inicio\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inicio\Frm_Login.designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SistemaSueldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SistemaSueldos.Designer.cs">
+      <DependentUpon>Frm_SistemaSueldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SueldoAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SueldoAlta.Designer.cs">
+      <DependentUpon>Frm_SueldoAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SueldoBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SueldoBase.Designer.cs">
+      <DependentUpon>Frm_SueldoBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SueldoBorrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SueldoBorrar.Designer.cs">
+      <DependentUpon>Frm_SueldoBorrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SueldoModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sueldos\Frm_SueldoModificar.Designer.cs">
+      <DependentUpon>Frm_SueldoModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuarios.Designer.cs">
+      <DependentUpon>Frm_ABM_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_usuarios.designer.cs">
+      <DependentUpon>Frm_usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_UsuariosAltas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_UsuariosAltas.Designer.cs">
+      <DependentUpon>Frm_UsuariosAltas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_UsuariosBorrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_UsuariosBorrar.Designer.cs">
+      <DependentUpon>Frm_UsuariosBorrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_UsuariosConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_UsuariosConsulta.Designer.cs">
+      <DependentUpon>Frm_UsuariosConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_UsuariosModificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_UsuariosModificacion.Designer.cs">
+      <DependentUpon>Frm_UsuariosModificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="negocios\Ne_Asignaciones.cs" />
+    <Compile Include="negocios\Ne_Descuentos.cs" />
+    <Compile Include="negocios\Ne_estados.cs" />
+    <Compile Include="negocios\Ne_EstadosUsuarios.cs" />
+    <Compile Include="negocios\Ne_perfiles.cs" />
+    <Compile Include="negocios\Ne_SueldoAsignacion.cs" />
+    <Compile Include="negocios\Ne_SueldoDescuento.cs" />
+    <Compile Include="negocios\Ne_SueldoPerfilHistorico.cs" />
+    <Compile Include="negocios\Ne_Sueldos.cs" />
+    <Compile Include="negocios\Ne_Usuarios.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\Sueldos\Ds_Sueldos.Designer.cs" />
+    <Compile Include="Reportes\Sueldos\Frm_Rpt_Sueldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Sueldos\Frm_Rpt_Sueldos.Designer.cs">
+      <DependentUpon>Frm_Rpt_Sueldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Usuarios\DataSet1.Designer.cs" />
+    <Compile Include="Reportes\Usuarios\DataSet2.Designer.cs" />
+    <Compile Include="Reportes\Usuarios\Frm_RptUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Usuarios\Frm_RptUsuarios.Designer.cs">
+      <DependentUpon>Frm_RptUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="clases\ButtonNuevo.resx">
+      <DependentUpon>ButtonNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clases\LabelText01.resx">
+      <DependentUpon>LabelText01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clases\LabelText02.resx">
+      <DependentUpon>LabelText02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clases\lbl_titulo.resx">
+      <DependentUpon>lbl_titulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clases\SelecCuil.resx">
+      <DependentUpon>SelecCuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clases\Selector01.resx">
+      <DependentUpon>Selector01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadosUsuarios\Frm_ABM_EstadosUsuarios.resx">
+      <DependentUpon>Frm_ABM_EstadosUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadosUsuarios\Frm_EstadosUsuarios.resx">
+      <DependentUpon>Frm_EstadosUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadosUsuarios\Frm_EstadosUsuariosAlta.resx">
+      <DependentUpon>Frm_EstadosUsuariosAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadosUsuarios\Frm_EstadosUsuariosModificacion.resx">
+      <DependentUpon>Frm_EstadosUsuariosModificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Base_Selector.resx">
+      <DependentUpon>Frm_Base_Selector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Ejemplo_Progracion.resx">
+      <DependentUpon>Frm_Ejemplo_Progracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_EstadosUsuariosConsulta.resx">
+      <DependentUpon>Frm_EstadosUsuariosConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Seleccionar.resx">
+      <DependentUpon>Frm_Seleccionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inicio\Frm_Escritorio.resx">
+      <DependentUpon>Frm_Escritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inicio\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sueldos\Frm_SistemaSueldos.resx">
+      <DependentUpon>Frm_SistemaSueldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sueldos\Frm_SueldoAlta.resx">
+      <DependentUpon>Frm_SueldoAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sueldos\Frm_SueldoBase.resx">
+      <DependentUpon>Frm_SueldoBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sueldos\Frm_SueldoBorrar.resx">
+      <DependentUpon>Frm_SueldoBorrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sueldos\Frm_SueldoModificar.resx">
+      <DependentUpon>Frm_SueldoModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuarios.resx">
+      <DependentUpon>Frm_ABM_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_usuarios.resx">
+      <DependentUpon>Frm_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_UsuariosAltas.resx">
+      <DependentUpon>Frm_UsuariosAltas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_UsuariosBorrar.resx">
+      <DependentUpon>Frm_UsuariosBorrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_UsuariosConsulta.resx">
+      <DependentUpon>Frm_UsuariosConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_UsuariosModificacion.resx">
+      <DependentUpon>Frm_UsuariosModificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\Sueldos\Frm_Rpt_Sueldos.resx">
+      <DependentUpon>Frm_Rpt_Sueldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Sueldos\Rpt_Asig_DescXPeriodo.rdlc" />
+    <EmbeddedResource Include="Reportes\Sueldos\Rpt_Asig_DescXRangoPeriodo.rdlc" />
+    <EmbeddedResource Include="Reportes\Sueldos\Rpt_LiquidacionSueldo.rdlc" />
+    <EmbeddedResource Include="Reportes\Usuarios\Frm_RptUsuarios.resx">
+      <DependentUpon>Frm_RptUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Usuarios\Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\Usuarios\Rpt_Usuarios01.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\Sueldos\Ds_Sueldos.xsc">
+      <DependentUpon>Ds_Sueldos.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Sueldos\Ds_Sueldos.xsd" />
+    <None Include="Reportes\Sueldos\Ds_Sueldos.xss">
+      <DependentUpon>Ds_Sueldos.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Usuarios\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Usuarios\DataSet1.xsd" />
+    <None Include="Reportes\Usuarios\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Usuarios\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Usuarios\DataSet2.xsd" />
+    <None Include="Reportes\Usuarios\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\3puntos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUSCAR01.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabecera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrarBug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comentar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empty Recycle Bin 2000.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grabar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-modificar-png-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar_g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar_g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil-striped-symbol-for-interface-edit-buttons_icon-icons.com_56782.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
